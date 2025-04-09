@@ -1,0 +1,411 @@
+/* Seus estilos CSS existentes */
+
+/* Estilos para a seção de Passeios */
+.passeios-titulo {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 30px;
+}
+
+.passeios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+.passeios-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px; /* Para compensar a margem negativa nos elementos .passeios-item */
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.passeios-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    max-width: calc(25% - 20px); /* Calcula 25% do espaço menos a margem */
+    text-align: center;
+    float: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.passeios-item img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* Cor de fundo branca */
+}
+
+.texto_de_entrada {
+    color: #302842;
+    font-family: Poppins;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 65px */
+    text-transform: capitalize;
+    text-align: left;
+    margin-left: 166px;
+    margin-bottom: 0;
+}
+
+#top-image {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    /* Para ocupar toda a largura da janela */
+    z-index: -1;
+    /* Coloca a imagem atrás do conteúdo */
+}
+
+
+header {
+    background-color: #FCFDFF;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #777497;
+    font-size: 20px;
+}
+
+.profile-access {
+    float: right;
+}
+
+.profile-access a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Estilize o menu suspenso */
+.menu-dropdown {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Cor de fundo do submenu */
+    border: 1px solid #ccc; /* Borda do submenu */
+    padding: 10px;
+}
+
+/* Estilos para o segundo menu */
+.menu-secundario {
+
+    text-align: center; /* Centralizar o texto dos itens do menu */
+    border-radius: 10px; /* Arredonde as bordas do segundo menu */
+    padding: 10px; /* Espaçamento interno */
+    margin: 0 auto; /* Centralize horizontalmente o segundo menu */
+    width: fit-content; /* Ajuste a largura ao conteúdo do menu */
+    margin-top: 30px;
+    z-index: 1000;
+}
+
+.menu-secundario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-secundario li {
+    display: inline;
+    margin: 0 10px;
+    position: relative; /* Espaçamento entre os itens do segundo menu */
+}
+
+.menu-secundario a {
+    text-decoration: none;
+    color:302842;
+    color: #fff;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #6A35FF;
+    transition: background-color 0.3s, color 0.3s; 
+    /* Adicione outros estilos conforme necessário */
+}
+
+.menu-secundario a:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #b42e2e; /* Cor do texto ao passar o mouse */
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    z-index: 2
+}
+
+/* Estilos para o ícone do WhatsApp quando o mouse passa por cima */
+.whatsapp-icon:hover {
+    background-color: #128c7e;
+    /* Altere a cor quando passar o mouse */
+}
+
+
+.icon-before-text {
+    padding: 0;
+    margin-right: 2px; /* Espaço entre o ícone e o texto */
+    height: 35px;
+    width: 35px;
+}
+
+/* Em seu arquivo "style.css" */
+.footer-links {
+    position: fixed;
+    bottom: 30px;
+    left: 90px; /* Posição ao lado do ícone do WhatsApp */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;  /* Coloca os links na frente do ícone */
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+    /* Espaçamento entre os links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.texto_home {
+    color: #302842;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 20.4px */
+    text-transform: capitalize;
+}
+
+.id {
+    top: auto;
+}
+
+.scroll-link {
+    cursor: pointer;
+    color: #007BFF; /* Cor do link, pode personalizar conforme desejado */
+    text-decoration: none;
+    transition: color 0.3s; /* Adiciona uma transição suave para a cor do link */
+}
+
+.scroll-link:hover {
+    color: #0056b3; /* Cor diferente quando o mouse passa por cima do link (opcional) */
+}
+
+#passeio-de-barco {
+    padding-top: 80px; /* Adicione espaço extra acima da seção */
+}
+
+#passeio-de-lancha {
+    padding-top: 80px; /* Adicione espaço extra acima da seção */
+}
+
+/* Estilos para o rodapé roxo */
+.purple-footer {
+    background-color: #6A35FF; /* Cor de fundo roxa */
+    color: #fff; /* Cor do texto branco */
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Estilos para os ícones sociais */
+.social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos para o número de telefone de contato */
+.footer-contact {
+    margin-top: 10px;
+}
+.meuCarrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.minhaImagem {
+    flex-shrink: 0;
+    width: 100vw; /* Isso fará com que cada imagem ocupe a largura total da janela de visualização */
+}
+
+.minhaImagem img {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+}
+
+.seta {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+
+/* Estilos para a seção de Passeios em dispositivos móveis */
+@media (max-width: 768px) {
+    .passeios-titulo {
+        margin-top: 60px;
+        font-size: 24px;
+    }
+
+    .passeios-box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .passeios-item {
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Estilos para o texto de entrada em dispositivos móveis */
+@media (max-width: 576px) {
+    .texto_de_entrada {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+}
+
+/* Estilos para o menu suspenso em dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-dropdown:hover .submenu {
+        display: block;
+    }
+}
+
+/* Estilos para o segundo menu em dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-secundario {
+        margin-top: 20px;
+    }
+
+    .menu-secundario li {
+        margin: 0 5px;
+    }
+
+    .menu-secundario a {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+}
+
+/* Estilos para o ícone do WhatsApp em dispositivos móveis */
+@media (max-width: 576px) {
+    .whatsapp-icon {
+        bottom: 30px;
+        right: 30px;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* Estilos para os links do rodapé em dispositivos móveis */
+@media (max-width: 576px) {
+    .footer-links {
+        left: 30px;
+    }
+
+    .footer-links li {
+        margin: 0 5px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para o número de telefone de contato em dispositivos móveis */
+@media (max-width: 576px) {
+    .footer-contact {
+        margin-top: 5px;
+    }
+}
+
+/* Estilos para o carrossel em dispositivos móveis */
+@media (max-width: 768px) {
+    .meuCarrossel {
+        flex-wrap: nowrap;
+    }
+
+    .minhaImagem {
+        width: 100%;
+    }
+}
+
+/* Estilos para as setas do carrossel em dispositivos móveis */
+@media (max-width: 768px) {
+    .seta {
+        font-size: 1.5em;
+    }
+}

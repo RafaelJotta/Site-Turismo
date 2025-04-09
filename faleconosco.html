@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/faleconosco.css">
+    <title>faleconosco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="texto_home"><img src="img/icone1.png" alt="Ícone Paraty"
+                            class="icon-before-text"> Paraty
+                        Aventura</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="hospedagem.html">Hospedagem</a></li>
+                <li><a href="#">Transfers</a></li>
+                <li><a href="eventos.html">Calendario Paraty</a></li>
+                <li><a href="faleconosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="fale-conosco">
+            <h1>Fale Conosco</h1>
+
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h2>E-mail:</h2>
+                    <p>seu-email@example.com</p>
+                </div>
+                <div class="contato-item">
+                    <h2>Telefone:</h2>
+                    <p>(11) 1234-5678</p>
+                </div>
+            </div>
+
+            <div class="redes-sociais">
+                <h2>Siga-nos nas Redes Sociais:</h2>
+                <div class="footer-social">
+                    <a href="#" class="social-icone"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icone"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="formulario-contato">
+                <h2>Envie-nos uma Mensagem:</h2>
+                <form action="processar_formulario.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="purple-footer">
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-contact">
+            <p>Entre em contato: (Seu número de telefone)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <ul class="footer-links">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    <a href="https://api.whatsapp.com/send?phone=SEU-NUMERO-DE-TELEFONE" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

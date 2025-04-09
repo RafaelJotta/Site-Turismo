@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* Cor de fundo branca */
+}
+
+.texto_de_entrada {
+    color: #302842;
+    font-family: Poppins;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 65px */
+    text-transform: capitalize;
+    text-align: left;
+    margin-left: 166px;
+    margin-bottom: 0;
+}
+
+#top-image {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    /* Para ocupar toda a largura da janela */
+    z-index: -1;
+    /* Coloca a imagem atrás do conteúdo */
+}
+
+
+header {
+    background-color: #FCFDFF;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #777497;
+    font-size: 20px;
+}
+
+.profile-access {
+    float: right;
+}
+
+.profile-access a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Estilize o menu suspenso */
+.menu-dropdown {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Cor de fundo do submenu */
+    border: 1px solid #ccc; /* Borda do submenu */
+    padding: 10px;
+}
+
+.search-container {
+    margin-left: 300px;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 751px;
+    /* Reduzindo a largura máxima do container */
+    height: 80px;
+    border-radius: 144px;
+    background: #FCFDFF;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+    flex-shrink: 0;
+}
+
+#search-input {
+    padding: 15px;
+    /* Reduzindo o padding para tornar o campo de busca menor */
+    font-size: 15px;
+    /* Reduzindo o tamanho da fonte */
+    width: 70%;
+    /* Ajustando a largura do campo de busca */
+    border: none;
+    border-radius: 144px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+button {
+    margin-right: 10px;
+    padding: 25px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 144px;
+    background-image: url('/img/Vector.png');
+    /* URL da imagem da lupa roxa */
+    background-size: contain;
+    /* Ajuste o tamanho da imagem para caber no botão */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-position: center;
+    /* Centraliza a imagem no botão */
+}
+
+.texto_home {
+    color: #302842;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 20.4px */
+    text-transform: capitalize;
+}
+
+.icon-before-text {
+    padding: 0;
+    margin-right: 2px; /* Espaço entre o ícone e o texto */
+    height: 35px;
+    width: 35px;
+}
+
+/* Em seu arquivo "style.css" */
+.footer-links {
+    position: fixed;
+    bottom: 30px;
+    left: 90px; /* Posição ao lado do ícone do WhatsApp */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;  /* Coloca os links na frente do ícone */
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+    /* Espaçamento entre os links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    z-index: 2;
+}
+
+/* Estilos para o ícone do WhatsApp quando o mouse passa por cima */
+.whatsapp-icon:hover {
+    background-color: #128c7e;
+    /* Altere a cor quando passar o mouse */
+}
+
+/* Estilos para o contêiner do carrossel */
+.carousel-container {
+    max-width: 90%;
+    margin-left: 50px;
+    margin-top: 0px;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    /* Adicione a propriedade abaixo para ocultar a barra de rolagem horizontal */
+    overflow-x: hidden;
+}
+
+/* Estilos para a lista de blocos do carrossel */
+.carousel-list {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Suporte a rolagem suave em dispositivos iOS */
+}
+
+/* Estilos para cada bloco do carrossel */
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    /* Largura de cada bloco */
+    min-height: 200px;
+    /* Altura de cada bloco */
+    margin-right: 20px;
+    /* Espaçamento entre os blocos */
+    scroll-snap-align: start;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    /* Centralizar o conteúdo */
+}
+
+/* Estilos para as imagens dentro dos blocos */
+.carousel-item img {
+    max-width: 100%;
+    /* Evitar que as imagens excedam a largura dos blocos */
+    max-height: 100%;
+    /* Evitar que as imagens excedam a altura dos blocos */
+}
+
+.carousel-item.hovered {
+    transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+}
+
+/* Estilos para as setas do carrossel */
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #6A35FF;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-prev {
+    left: -40px; /* Posição da seta esquerda */
+}
+
+.carousel-next {
+    right: -40px; /* Posição da seta direita */
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: #128c7e; /* Altere a cor quando passar o mouse */
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10px; /* Reduza a altura para acomodar a proximidade do "passeios" */
+    margin-top: 400px; /* Reduza ou ajuste para um valor negativo para acomodar a proximidade do "passeios" */
+    font-size: 50px;
+}
+
+
+.passeios-container {
+    max-width: 90%;
+    margin-left: 50px;
+    margin-top: 0; /* Reduza ou ajuste para um valor negativo para trazer mais perto do carrossel */
+    height: 500px; /* Mantenha a altura desejada */
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Estilos para a lista de blocos do carrossel */
+.passeios-list {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Suporte a rolagem suave em dispositivos iOS */
+}
+
+/* Estilos para cada bloco do carrossel */
+.passeios-item {
+    flex: 0 0 auto;
+    width: 300px;
+    /* Largura de cada bloco */
+    min-height: 200px;
+    /* Altura de cada bloco */
+    margin-right: 20px;
+    /* Espaçamento entre os blocos */
+    scroll-snap-align: start;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    /* Centralizar o conteúdo */
+}
+
+/* Estilos para as imagens dentro dos blocos */
+.passeios-item img {
+    max-width: 100%;
+    /* Evitar que as imagens excedam a largura dos blocos */
+    max-height: 100%;
+    /* Evitar que as imagens excedam a altura dos blocos */
+}
+
+.passeios-item h2 {
+    color: #302842;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 20.4px */
+    text-transform: capitalize;
+}
+
+.passeios-item h2 p {
+    float: right;
+    color: #302842;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 20.4px */
+    text-transform: capitalize;
+}
+
+.passeios-titulo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 130px; /* Reduza a altura para ficar mais perto do topo */
+    margin-top: 0; /* Ajuste a margem superior para trazer mais perto da parte superior */
+    font-size: 50px;
+} 
+
+/* Estilos para o rodapé roxo */
+.purple-footer {
+    background-color: #6A35FF; /* Cor de fundo roxa */
+    color: #fff; /* Cor do texto branco */
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+/* Estilos para os ícones sociais */
+.social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Estilos para o número de telefone de contato */
+.footer-contact {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos para o rodapé verde */
+.green-footer {
+    background-color: #26CBB7; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 520px; /* Ajuste a altura desejada */
+    position: relative; /* Adicionado para controlar o posicionamento do conteúdo */
+}
+/* Estilos para os ícones sociais */
+.social-icon-green {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos para o número de telefone de contato no rodapé verde */
+.footer-contact-green {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 89.025px */
+    text-transform: capitalize;
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    top: 50%; /* Move o texto para o centro verticalmente */
+    left: 50%; /* Move o texto para o centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    z-index: 2; /* Coloca o texto acima da imagem */
+}
+
+/* Estilos para a imagem do rodapé */
+.img-footer {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    margin: 0;
+    padding: 0;
+    block-size: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+}
